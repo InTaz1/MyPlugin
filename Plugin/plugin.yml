@@ -1,0 +1,8 @@
+﻿name: Plugin
+version: 1.0
+author: MrCrab1232
+main: config.yml
+permissions:
+  myplugin.admin:
+    default: false
+    description: Gives access to all MyPlugin commands

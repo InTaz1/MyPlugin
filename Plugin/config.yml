@@ -1,0 +1,6 @@
+# Создаем плейсхолдер %sound-admin-<sound>-<volume>-<pitch>%
+execute if entity @a[nbt={SelectedItem:{tag:{sound_admin:"1b"}}}] run playsound minecraft:<sound> master @a[scores={admin=1}] ~ ~ ~ <volume> <pitch>
+
+# Определяем право chatty.chat.admin
+scoreboard objectives add admin dummy
+scoreboard players set @a admin 1 {"HasPermission":"chatty.chat.admin"}
